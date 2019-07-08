@@ -1,7 +1,16 @@
-ch = input("Please Enter Your Own Character : ")
+#include <iostream>
+using namespace std;
 
-if(ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u' or ch == 'A'
-       or ch == 'E' or ch == 'I' or ch == 'O' or ch == 'U'):
-    print("The Given Character ", ch, "is a Vowel")
-else:
-    print("The Given Character ", ch, "is a Consonant")
+int main() {
+	int year;
+	cin>>year;
+	if((year%4==0&&year%100!=0)||(year%400==0))
+	{
+		cout<<"yes";
+	}
+	else
+	{
+		cout<<"no";
+	}
+	return 0;
+}
